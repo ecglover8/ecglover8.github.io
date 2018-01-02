@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="author" content="Gene Glover">
+<meta name="description" content="Gigi Web & Graphic Design">
+<meta name="keywords" content="portfolio, HTML, CSS, Javascript, web design">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+/* fresh start for all css */
+* {
+  box-sizing: border-box;
+  font-size: 18px;
+  margin: 0px;
+  padding: 0px;
+}
+/* defaults for certain elements */
+nav {
+  background-color: #C0C0C0;
+  border-bottom: 1px solid #12121D;
+  display: block;
+  font-size: 12px;
+  position: fixed;
+  top: 0px;
+  width: 100%;
+}
+nav a {
+  border-right: 7px solid #12121D;
+  color: #12121D;
+  display: inline-block;
+  float: left;
+  font-family: "lucida console", monospace;
+  font-size: 2em;
+  font-weight: 600;
+  padding: 10px 20px 5px 15px;
+  text-decoration: none;
+}
+nav a:hover {
+  background-color: #C5BBBB;
+}
+p {
+  color: #12121D;
+  padding: 0px 10px 20px 10px;
+  text-indent: 15px;
+}
+/* all elements by id, in alphabetical order */
+#aboutme {
+  background-color: #89ABE3;
+  display: block;
+  font-family: verdana, tahoma;
+  min-height: 400px;
+  padding: 65px 30px 10px 25px;
+}
+#cv {
+  background-color: #89ABE3;
+  display: block;
+  font-family: verdana, tahoma;
+  min-height: 400px;
+  padding: 65px 30px 10px 25px;
+}
+#contact {
+  background-color: #DEB887;
+  min-height: 400px;
+  padding: 65px 5% 10px 5%;
+  text-align: center;
+}
+#logo {
+  box-shadow: -5px 5px 10px #C0C0C0;
+  float: right;
+  margin: 0px 10px 15px 25px;
+}
+#portfolio {
+  background-color: #DEB887;
+  min-height: 400px;
+  padding: 65px 5% 10px 5%;
+  text-align: center;
+}
+/* all elements by class, in alphabetical order */
+.bluebrown {
+  background: linear-gradient(#89ABE3, #DEB887);
+  height: 30px;
+}
+.brownblue {
+  background: linear-gradient(#DEB887, #89ABE3);
+  height: 30px;
+}
+.contact {
+  background-color: #FFFFFF;
+  display: inline-block;
+  height: 90px;
+  text-align: center;
+  width: 160px;
+}
+.contact:hover {
+  transform: scale(1.1, 1.1);
+}
+.port {
+  display: inline-block;
+  height: 120px;
+  text-align: center;
+  width: 160px;
+}
+.port:hover {
+  transform: scale(1.1, 1.1);
+}
+/* add responsive menu and decrease font size in smaller browsers */
+@media only screen and (max-width: 600px) {
+  * { font-size: 14px; }
+  nav { position: static; }
+  nav a { display: block; float: none; font-size: 1.3em; }
+  #aboutme { padding-top: 10px; }
+  #logo { height: 100px; width: 100px; }
+}
+</style>
+<title>Gigi Web Design Portfolio</title>
+</head>
+<body>
+<nav>
+  <a href="#aboutme">about me</a>
+  <a href="#portfolio">portfolio</a>
+  <a href="#cv">cv</a>
+  <a href="#contact">contact</a>
+</nav>
+<div id="aboutme">
+  <img height="200" alt="Gigi Web & Graphic Design" id="logo" src="http://res.cloudinary.com/ecglover8/image/upload/v1504296235/logo_s1dnnu.png" title="Gigi Web & Graphic Design -- Expectorating the Unexpected" width="200" />
+  <p>My name is Gene and this is my little slice of the internet. I am currently working on completing a full stack web development program and am actively searching for some volunteer web design gigs to increase my experience and add to my portfolio. I have experience with HTML, CSS, PHP, Javascript, React, D3, et cetera. I am also experienced with integrating SQL and NoSQL databases into dynamic web applications.</p>
+  <p>My philosophy is that less is always more, unless you are talking about ice cream. I believe that if you can create an effect using just HTML and CSS, just use HTML and CSS. Make every effect be as fancy as it needs to be, and no fancier. Keep outside libraries and loading times to a minimum. Put your most important stuff up front, and less important stuff further down the page.</p> 
+  <p>If you are interested in my services, please send me an email or contact me through one of the social links below.</p>
+</div>
+<div class="bluebrown"></div>
+<div id="portfolio">
+  <div class="port">
+    <a href="https://codepen.io/ecglover8/full/XjXPaj" target="_blank"><img height="120" src="http://res.cloudinary.com/ecglover8/image/upload/v1507413695/benderama_lpx9wd.jpg" title="This page will deliver a random quote from the cartoon character Bender, and also gives you the option to send that quote to your Twitter account." width="160" /></a>
+  </div>
+  <div class="port">
+    <a href="https://sortes-crepusculum.herokuapp.com/index.html" target="_blank"><img height="120" src="http://res.cloudinary.com/ecglover8/image/upload/v1511748902/sortes_hzgkps.jpg" title="A page for those who wish to practice bibliomancy with Stephanie Meyer's Twilight. It's complicated. Check the site for more." width="160" /></a>
+  </div>  
+  <div class="port">
+    <a href="https://codepen.io/ecglover8/full/ALpQAA" target="_blank"><img height="120" src="http://res.cloudinary.com/ecglover8/image/upload/v1507413695/wiki_csmcoy.jpg" title="An application that uses the Wikipedia API to search the Wikipedia website for anything you desire, or nothing at all." width="160" /></a>
+  </div>
+  <div class="port">
+    <a href="https://codepen.io/ecglover8/full/qqmXwN" target="_blank"><img height="120" src="http://res.cloudinary.com/ecglover8/image/upload/v1507413695/mm_arvub1.jpg" title="Utilizing React, SASS, and Markdown, this page is a fast rendering Markdown editor." width="160" /></a>
+  </div>
+  <div class="port">
+    <a href="https://codepen.io/ecglover8/full/dOJKMr" target="_blank"><img height="120" src="http://res.cloudinary.com/ecglover8/image/upload/v1507413695/life_qal6vw.jpg" title="My take on Conway's Game of Life with customizable rows and ability to change the percentage of cells that are living at the beginning of the game." width="160" /></a>
+  </div>
+  <div class="port">
+    <a href="https://genes-timestamp-microservice.herokuapp.com" target="_blank"><img height="120" src="http://res.cloudinary.com/ecglover8/image/upload/v1507413685/timestamp_kh7jhr.jpg" title="A timestamp API. Input any date and receive the UNIX time from that date. You can also get the UNIX time right now." width="160" /></a>
+  </div>
+  <div class="port">
+    <a href="https://codepen.io/ecglover8/full/VrWyOg" target="_blank"><img height="120" src="http://res.cloudinary.com/ecglover8/image/upload/v1514935061/rogue_r9nhgz.jpg" title="A Roguelike dungeon crawler set in the X-men universe." width="160" /></a>
+  </div>
+  <div class="port">
+    <a href="https://genes-voting-app.herokuapp.com" target="_blank"><img height="120" src="http://res.cloudinary.com/ecglover8/image/upload/v1507413685/vote_lfaxzd.jpg" title="A dynamic web voting application where you can create, edit, view, and vote in polls about anything. Also includes the ability to register and login so you can be remembered when you return." width="160" /></a>
+  </div>
+</div>
+<div class="brownblue"></div>
+<div id="cv">
+  <p>My CV can be viewed on <a href="https://app.enhancv.com/r/777b8204/gene-glover"target="_blank">Enhancv</a>.</p>
+  <p>My front end certificate can be viewed on <a href="https://www.freecodecamp.org/ecglover8/front-end-certification" target="_blank">FreeCodeCamp</a>, or as a <a href="http://res.cloudinary.com/ecglover8/raw/upload/v1509311355/FCC_frontend_sa62yr.pdf" target="_blank">PDF document</a>.</p> 
+  <p>My data visualization certificate can be viewed on <a href="https://www.freecodecamp.org/ecglover8/data-visualization-certification" target="_blank">FreeCodeCamp</a>, or as a <a href="http://res.cloudinary.com/ecglover8/raw/upload/v1514218130/FCC_dataviz_cshplr.pdf" target="_blank">PDF document</a>.</p>
+</div>
+<div class="bluebrown"></div>
+<div id="contact">
+  <div class="contact">
+    <a href="mailto:gigiweb@programmer.net?Subject=Your awesome portfolio" target="_blank">
+      <svg height="90" width="160">
+        <title>Email me</title>
+        <rect x="30" y="17" height="56" width="100" style="fill:none;stroke:#12121D;stroke-width:3" />
+        <polyline points="30,17 80,55 130,17" style="fill:none;stroke:#12121D;stroke-width:3" />
+        Email me
+      </svg>
+    </a>
+  </div>
+  <div class="contact" style="background-color:#006400;">
+    <a href="https://www.freecodecamp.org/ecglover8" target="_blank">
+      <img src="http://res.cloudinary.com/ecglover8/image/upload/v1504294657/fcc_azxmys.png" title="My code portfolio on FreeCodeCamp"/>
+    </a>
+  </div>
+  <div class="contact">
+   <a href="https://github.com/ecglover8" target="_blank">
+      <img src="http://res.cloudinary.com/ecglover8/image/upload/v1504294666/github_yk4vog.png" title="My page on Github" />
+   </a>
+  </div>
+  <div class="contact">
+    <a href="https://www.linkedin.com/in/eugene-glover-1428a5" target="_blank">
+      <img src="http://res.cloudinary.com/ecglover8/image/upload/v1504294681/linkedin_oy1zkd.png" height="90" title="My profile on LinkedIn" />
+    </a>
+  </div>
+  <div class="contact">
+    <a href="https://www.facebook.com/Gigi-Web-Graphic-Design-1963750427172784" target="_blank">
+      <img src="http://res.cloudinary.com/ecglover8/image/upload/v1510110432/facebook_qgrg2n.png" title="Gigi Web Design on Facebook" />
+    </a>
+  </div>  
+<!-- page created by Gene Glover -->
+</div>
+</body>
+</html>
